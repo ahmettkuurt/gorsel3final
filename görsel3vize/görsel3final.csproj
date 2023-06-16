@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{99E14441-DD39-4AEE-BC36-A219645ECC75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>görsel3vize</RootNamespace>
+    <AssemblyName>görsel3vize</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa.Designer.cs">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bilgidüzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilgidüzenle.Designer.cs">
+      <DependentUpon>bilgidüzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bilgiler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilgiler.Designer.cs">
+      <DependentUpon>bilgiler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="görsel3finalDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>görsel3finalDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="idarigiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="idarigiris.Designer.cs">
+      <DependentUpon>idarigiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="idarisayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="idarisayfa.Designer.cs">
+      <DependentUpon>idarisayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrduzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrduzenle.Designer.cs">
+      <DependentUpon>ogrduzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrekle.Designer.cs">
+      <DependentUpon>ogrekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenciler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenciler.Designer.cs">
+      <DependentUpon>ogrenciler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrgiris.Designer.cs">
+      <DependentUpon>ogrgiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrsayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrsayfa.Designer.cs">
+      <DependentUpon>ogrsayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrsikayet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrsikayet.Designer.cs">
+      <DependentUpon>ogrsikayet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrsikayetbak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrsikayetbak.Designer.cs">
+      <DependentUpon>ogrsikayetbak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrsikayetler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrsikayetler.Designer.cs">
+      <DependentUpon>ogrsikayetler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrsikayetsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrsikayetsil.Designer.cs">
+      <DependentUpon>ogrsikayetsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrsil.Designer.cs">
+      <DependentUpon>ogrsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sikayetcevap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sikayetcevap.Designer.cs">
+      <DependentUpon>sikayetcevap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sikayetEtme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sikayetEtme.Designer.cs">
+      <DependentUpon>sikayetEtme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sikayetgörüntüle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sikayetgörüntüle.Designer.cs">
+      <DependentUpon>sikayetgörüntüle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sikayetler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sikayetler.Designer.cs">
+      <DependentUpon>sikayetler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sikayetsil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sikayetsil.Designer.cs">
+      <DependentUpon>sikayetsil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bilgidüzenle.resx">
+      <DependentUpon>bilgidüzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bilgiler.resx">
+      <DependentUpon>bilgiler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="idarigiris.resx">
+      <DependentUpon>idarigiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="idarisayfa.resx">
+      <DependentUpon>idarisayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrduzenle.resx">
+      <DependentUpon>ogrduzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrekle.resx">
+      <DependentUpon>ogrekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenciler.resx">
+      <DependentUpon>ogrenciler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrgiris.resx">
+      <DependentUpon>ogrgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrsayfa.resx">
+      <DependentUpon>ogrsayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrsikayet.resx">
+      <DependentUpon>ogrsikayet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrsikayetbak.resx">
+      <DependentUpon>ogrsikayetbak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrsikayetler.resx">
+      <DependentUpon>ogrsikayetler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrsikayetsil.resx">
+      <DependentUpon>ogrsikayetsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrsil.resx">
+      <DependentUpon>ogrsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sikayetcevap.resx">
+      <DependentUpon>sikayetcevap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sikayetEtme.resx">
+      <DependentUpon>sikayetEtme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sikayetgörüntüle.resx">
+      <DependentUpon>sikayetgörüntüle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sikayetler.resx">
+      <DependentUpon>sikayetler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sikayetsil.resx">
+      <DependentUpon>sikayetsil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="görsel3finalDataSet.xsc">
+      <DependentUpon>görsel3finalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="görsel3finalDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>görsel3finalDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="görsel3finalDataSet.xss">
+      <DependentUpon>görsel3finalDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adres.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ara.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayarlar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bekle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bekle1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bekle16.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bekle24.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bilgi32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpi25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carpi32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dizin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\geriyukle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graphix-internet-explorer_282x282.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_male_user_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_secure_48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iletisim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kategori.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kullanici.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KURT TECHV1.0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_user_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muster-bilgi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri-duzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri-ekle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri-kategori.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri-sil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Places-certificate-server-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapor-a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rapor-g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raporh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sales.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satis1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satis-e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satis-m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sifre.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takip-s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teknik1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teknik-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teknik-b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teknik-e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teknik-e1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teknik-g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\telefon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tik.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tik25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tik32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun-b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun-b1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun-b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun-e.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun-g.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun-k.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\urun-s.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whatsapp_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yenile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yukle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_male_user_481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_close_481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\musteri3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_user_100px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_64px1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male_user_100px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_64px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room_80px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\external_24px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
